@@ -780,6 +780,7 @@ h6 {
   display: flex;
   justify-content: space-around;
   margin-bottom: 142px;
+  margin-left: 163px;
 }
 
 .questions-wrapper {
@@ -807,6 +808,9 @@ h6 {
 }
 
 .questions-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ffffff;
   border: 1px solid #f1f1f3;
   border-radius: 8px;
@@ -850,4 +854,100 @@ h6 {
   padding: 12px;
   width: 52px;
   height: 52px;
+}
+
+/* FOOTER */
+
+.footer-container {
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-left: 162px;
+  padding-right: 162px;
+  width: 1920px;
+}
+
+.footer-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-address-item {
+  font-family: var(--font-family-1);
+  color: #262626;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  font-style: normal;
+}
+
+.footer-address-item-wrapper {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.footer-nav-title {
+  font-family: var(--font-family-1);
+  color: #262626;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 14px;
+}
+
+.footer-nav-item {
+  font-family: var(--font-family-1);
+  color: #262626;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+
+.footer-nav-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-nav-soc {
+  background-color: #f7f7f8;
+  border: 1px solid #f1f1f3;
+  border-radius: 8px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+}
+
+.footer-nav-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 249px;
+  padding-bottom: 50px;
+}
+
+.footer-nav-list-icon {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-logo {
+  margin-bottom: 40px;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family-1);
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #656567;
+  background-color: #ffffff;
+  width: 1920px;
+  padding-top: 50px;
+  border-top: 1px solid #f1f1f3;
+  padding-bottom: 30px;
 }
