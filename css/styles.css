@@ -107,6 +107,26 @@ h6 {
   color: #262626;
 }
 
+.header-nav-item:focus,
+.header-nav-item:hover {
+  transform: scale(1.1);
+  transition: transform 250ms ease-in-out;
+}
+
+.header-nav-link {
+  font-family: var(--font-family-1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #262626;
+}
+
+.header-nav-link:focus,
+.header-nav-link:hover {
+  color: #ff9500;
+  transition: color 250ms ease-in-out;
+}
+
 .nav-home {
   background-color: #f1f1f3;
   border-radius: 8px;
@@ -120,17 +140,25 @@ h6 {
   color: #262626;
 }
 
+.nav-home:focus,
+.nav-home:hover {
+  background-color: #ff9500;
+  transition: background-color 250ms ease-in-out;
+}
+
 .header-nav-button {
   display: flex;
   gap: 12px;
   padding-right: 132px;
 }
 
-.nav-btn-sign {
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
   border: 1px solid var(--white-95);
   border-radius: 8px;
-  padding: 18px 24px;
   width: 117px;
   height: 55px;
   font-size: 18px;
@@ -139,17 +167,19 @@ h6 {
   color: #262626;
 }
 
-.nav-btn-login {
+.nav-btn:focus,
+.nav-btn:hover {
   background-color: var(--accent-color);
   border: none;
   border-radius: 8px;
-  padding: 14px 34px;
   width: 117px;
   height: 55px;
   font-size: 18px;
   line-height: 150%;
   font-family: var(--font-family-1);
   color: #ffffff;
+  transform: scale(1.1);
+  transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
 /* HERO */
@@ -244,6 +274,13 @@ h6 {
   text-align: center;
 }
 
+.hero-button-explore:focus,
+.hero-button-explore:hover {
+  box-shadow: 10px 10px 105px 28px rgba(255, 244, 229, 0.79);
+  transform: scale(1.07);
+  transition: box-shadow 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
 .hero-button-view {
   background-color: #ffffff;
   border: 1px solid #f1f1f3;
@@ -257,6 +294,13 @@ h6 {
   font-size: 18px;
   line-height: 150%;
   text-align: center;
+}
+
+.btn:focus,
+.btn:hover {
+  box-shadow: 10px 10px 24px -12px rgba(10, 10, 10, 1);
+  transform: scale(1.07);
+  transition: box-shadow 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
 .soc-nav-list {
@@ -421,6 +465,14 @@ h6 {
   height: 74px;
   position: absolute;
   right: 50px;
+  bottom: 25px;
+}
+
+.benefits-list-icon:focus,
+.benefits-list-icon:hover {
+  transform: scale(1.1);
+  border-color: #ff9500;
+  transition: transform 250ms ease-in-out, border-color 250ms ease-in-out;
 }
 
 /* COURSES */
@@ -509,6 +561,12 @@ h6 {
   text-align: center;
 }
 
+.courses-item-button:focus,
+.courses-item-button:hover {
+  background-color: #ffeacc;
+  transition: background-color 250ms ease-in-out;
+}
+
 .courses-item-container {
   display: flex;
   flex-direction: column;
@@ -580,6 +638,12 @@ h6 {
   text-align: center;
 }
 
+.testimonials-item-link:focus,
+.testimonials-item-link:hover {
+  background-color: #ffeacc;
+  transition: background-color 250ms ease-in-out;
+}
+
 .testimonials-photo {
   width: 60px;
   height: 60px;
@@ -607,7 +671,8 @@ h6 {
   line-height: 150%;
 }
 
-.pricing-button-accent {
+.pricing-button:focus,
+.pricing-button:hover {
   background-color: #ff9500;
   border-radius: 6px;
   border: none;
@@ -619,6 +684,7 @@ h6 {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+  transition: background-color 250ms ease-in-out;
 }
 
 .pricing-button-wrapper {
@@ -769,6 +835,13 @@ h6 {
   text-align: center;
 }
 
+.pricing-list-button:focus,
+.pricing-list-button:hover {
+  box-shadow: 10px 10px 24px -12px rgba(10, 10, 10, 1);
+  transform: scale(1.03);
+  transition: box-shadow 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
 /* QUESTIONS */
 
 .questions {
@@ -856,6 +929,15 @@ h6 {
   height: 52px;
 }
 
+.questions-list-icon:focus,
+.questions-list-icon:hover {
+  transform: scale(1.1);
+  background-color: #ff9500;
+  box-shadow: 10px 10px 24px -12px rgba(10, 10, 10, 1);
+  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out,
+    box-shadow 250ms ease-in-out;
+}
+
 /* FOOTER */
 
 .footer-container {
@@ -905,6 +987,16 @@ h6 {
   font-size: 18px;
   line-height: 150%;
   margin-bottom: 8px;
+}
+
+.footer-nav-link {
+  color: #262626;
+}
+
+.link-dash:focus,
+.link-dash:hover {
+  text-decoration: underline;
+  transition: text-decoration 250ms ease-in-out;
 }
 
 .footer-nav-wrapper {

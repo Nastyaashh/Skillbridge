@@ -39,15 +39,23 @@
             <li class="header-nav-item">
               <a href="./index.html" class="nav-home">Home</a>
             </li>
-            <li class="header-nav-item">Courses</li>
-            <li class="header-nav-item">About Us</li>
-            <li class="header-nav-item">Pricing</li>
-            <li class="header-nav-item">Contact</li>
+            <li class="header-nav-item">
+              <a href="#courses" class="header-nav-link">Courses</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#about" class="header-nav-link">About Us</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#pricing" class="header-nav-link">Pricing</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#contacts" class="header-nav-link">Contact</a>
+            </li>
           </ul>
         </div>
         <ul class="header-nav-button">
-          <li><button type="submit" class="nav-btn-sign">Sign Up</button></li>
-          <li><button type="submit" class="nav-btn-login">Login</button></li>
+          <li><button type="submit" class="nav-btn">Sign Up</button></li>
+          <li><button type="submit" class="nav-btn">Login</button></li>
         </ul>
       </nav>
     </header>
@@ -60,7 +68,7 @@
           <svg class="hero-title-icon" width="34" height="34">
             <use href="./images/symbol-defs.svg#icon-light"></use>
           </svg>
-          <h1 class="hero-title">
+          <h1 class="hero-title" id="home">
             <span class="hero-accent">Unlock</span> Your Creative Potential
           </h1>
         </div>
@@ -71,8 +79,10 @@
           Learn from Industry Experts and Enhance Your Skills.
         </p>
         <ul class="hero-button-list">
-          <li><button class="hero-button-explore">Explore Courses</button></li>
-          <li><button class="hero-button-view">View Pricing</button></li>
+          <li>
+            <button class="hero-button-explore btn">Explore Courses</button>
+          </li>
+          <li><button class="hero-button-view btn">View Pricing</button></li>
         </ul>
         <ul class="soc-nav-list">
           <li class="soc-nav-item">
@@ -115,7 +125,7 @@
         <section></section>
       </section>
       <section class="video container">
-        <div class="overlay-container">
+        <div class="overlay-container" id="about">
           <img
             src="./images/hero-photo.png"
             alt="hero photo"
@@ -127,14 +137,14 @@
       <section class="benefits container">
         <div class="section-wrapper">
           <div class="section-info">
-            <h2 class="section-title">Benefits</h2>
+            <h2 class="section-title" id="benefits">Benefits</h2>
             <p class="section-text">
               Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
               eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac
               cum eget habitasse in velit fringilla feugiat senectus in.
             </p>
           </div>
-          <button type="submit" class="section-button">View All</button>
+          <button type="submit" class="section-button btn">View All</button>
         </div>
         <ul class="benefits-list">
           <li class="benefits-item">
@@ -224,14 +234,14 @@
       <section class="courses container">
         <div class="section-wrapper">
           <div class="section-info">
-            <h2 class="section-title">Our Courses</h2>
+            <h2 class="section-title" id="courses">Our Courses</h2>
             <p class="section-text">
               Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
               eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac
               cum eget habitasse in velit fringilla feugiat senectus in.
             </p>
           </div>
-          <button type="submit" class="section-button">View All</button>
+          <button type="submit" class="section-button btn">View All</button>
         </div>
         <ul class="courses-list">
           <li class="courses-item">
@@ -366,14 +376,14 @@
       <section class="testimonials container">
         <div class="section-wrapper">
           <div class="section-info">
-            <h2 class="section-title">Our Testimonials</h2>
+            <h2 class="section-title" id="testimonials">Our Testimonials</h2>
             <p class="section-text">
               Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
               eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac
               cum eget habitasse in velit fringilla feugiat senectus in.
             </p>
           </div>
-          <button type="submit" class="section-button">View All</button>
+          <button type="submit" class="section-button btn">View All</button>
         </div>
         <ul class="testimonials-list">
           <li class="testimonials-item">
@@ -454,7 +464,7 @@
       <section class="pricing container">
         <div class="section-wrapper">
           <div class="section-info">
-            <h2 class="section-title">Our Pricing</h2>
+            <h2 class="section-title" id="pricing">Our Pricing</h2>
             <p class="section-text">
               Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
               eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac
@@ -463,9 +473,7 @@
           </div>
           <ul class="pricing-button-wrapper">
             <li>
-              <button type="submit" class="pricing-button-accent">
-                Monthly
-              </button>
+              <button type="submit" class="pricing-button">Monthly</button>
             </li>
             <li>
               <button type="submit" class="pricing-button">Yearly</button>
@@ -475,7 +483,7 @@
         <div class="pricing-container">
           <ul class="prising-list">
             <li class="pricing-item">
-              <h2 class="pricing-title">Free Plan</h2>
+              <h2 class="pricing-title btn">Free Plan</h2>
               <ul class="pricing-price">
                 <li>
                   <p class="pricing-name">$0</p>
@@ -536,7 +544,7 @@
               </button>
             </li>
             <li class="pricing-item">
-              <h2 class="pricing-title">Pro Plan</h2>
+              <h2 class="pricing-title btn">Pro Plan</h2>
               <ul class="pricing-price">
                 <li>
                   <p class="pricing-name">$79</p>
@@ -601,12 +609,14 @@
       </section>
       <section class="questions container">
         <div class="questions-wrapper">
-          <h2 class="questions-title">Frequently Asked Questions</h2>
+          <h2 class="questions-title" id="questions">
+            Frequently Asked Questions
+          </h2>
           <p class="questions-text">
             Still you have any questions? Contact our Team via
             support@skillbridge.com
           </p>
-          <a href="" class="questions-link">See All FAQ’s</a>
+          <a href="" class="questions-link btn">See All FAQ’s</a>
         </div>
         <ul class="questions-list">
           <li class="questions-item">
@@ -645,7 +655,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-container">
+      <div class="footer-container" id="contacts">
         <div class="footer-address-wrapper">
           <svg class="footer-logo" width="54" height="54">
             <use href="./images/symbol-defs.svg#icon-Logo"></use>
@@ -658,7 +668,7 @@
                 </svg>
                 <a
                   href="mailto:hello@skillbridge.com"
-                  class="footer-address-item"
+                  class="footer-address-item link-dash"
                   >hello@skillbridge.com</a
                 >
               </li>
@@ -666,7 +676,9 @@
                 <svg class="footer-address-icon" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-phone"></use>
                 </svg>
-                <a href="tel:+9191813232309" class="footer-address-item"
+                <a
+                  href="tel:+9191813232309"
+                  class="footer-address-item link-dash"
                   >+91 91813 23 2309</a
                 >
               </li>
@@ -674,7 +686,7 @@
                 <svg class="footer-address-icon" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-map"></use>
                 </svg>
-                <a href="" class="footer-address-item"
+                <a href="" class="footer-address-item link-dash"
                   >Somewhere in the World</a
                 >
               </li>
@@ -683,37 +695,53 @@
         </div>
         <div class="footer-nav-wrapper">
           <div class="footer-nav-wrap">
-            <p class="footer-nav-title">Home</p>
+            <p class="footer-nav-title">
+              <a href="#home" class="footer-nav-link">Home</a>
+            </p>
             <ul class="footer-nav-list">
-              <li class="footer-nav-item">Benefits</li>
-              <li class="footer-nav-item">Our Courses</li>
-              <li class="footer-nav-item">Our Testimonials</li>
-              <li class="footer-nav-item">Our FAQ</li>
+              <li class="footer-nav-item">
+                <a href="#benefits" class="footer-nav-link link-dash"
+                  >Benefits</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a href="#courses" class="footer-nav-link link-dash"
+                  >Our Courses</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a href="#testimonials" class="footer-nav-link link-dash"
+                  >Our Testimonials</a
+                >
+              </li>
+              <li class="footer-nav-item link-dash">
+                <a href="#questions" class="footer-nav-link">Our FAQ</a>
+              </li>
             </ul>
           </div>
           <div class="footer-nav-wrap">
             <p class="footer-nav-title">About Us</p>
             <ul class="footer-nav-list">
-              <li class="footer-nav-item">Company</li>
-              <li class="footer-nav-item">Achievements</li>
-              <li class="footer-nav-item">Our Goals</li>
+              <li class="footer-nav-item link-dash">Company</li>
+              <li class="footer-nav-item link-dash">Achievements</li>
+              <li class="footer-nav-item link-dash">Our Goals</li>
             </ul>
           </div>
           <div class="footer-nav-wrap">
             <p class="footer-nav-title">Social Profiles</p>
             <ul class="footer-nav-list-icon">
               <li class="footer-nav-item">
-                <svg class="footer-nav-soc" width="24" height="24">
+                <svg class="footer-nav-soc btn" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </li>
               <li class="footer-nav-item">
-                <svg class="footer-nav-soc" width="24" height="24">
+                <svg class="footer-nav-soc btn" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </li>
               <li class="footer-nav-item">
-                <svg class="footer-nav-soc" width="24" height="24">
+                <svg class="footer-nav-soc btn" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </li>
